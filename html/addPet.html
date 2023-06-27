@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/header_footer.js"></script>
+    <script src="../js/addPet.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/addPet.css"></link>
+    <title>PET WORLD</title>
+</head>
+<script>document.write(htmlheader);</script>
+<body>
+    <h2>please enter all the information required:</h2> 
+    <h5 class="warning">** please make sure owner is registered first **</h3>
+    <form>
+        <table>
+            <tr>
+                <td><label>name:</label></td>
+                <td><input type="text" id="name" required></td>
+             </tr>
+            <tr>
+                <td><label>breed:</label></td>
+                <td><input type="text" id="breed" required></td>
+            </tr>
+            <tr>
+                <td><label>age:</label></td>
+                <td><input type="date" id="age" required></td>
+            </tr>
+            <tr>
+                <td><label>weight:</label></td>
+                <td><input type="number" step=0.01 id="weight" required></td>
+            </tr>
+            <tr>
+                <td><label>owner:</label></td>
+                <td><select id="owner-id"></select></td>
+            </tr>
+            <tr>
+                <td><label>clinic:</label></td>
+                <td><select id="clinic-id" required></select></td>
+            </tr>
+            <tr>
+                <td><text>notes:</label></td>
+                <td><textarea id="notes" rows="4" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>chip:</label></td>
+                <td><input type="checkbox" id="chip"></td>
+            </tr>
+        </table>
+        <button type="submit" onClick="processInput()">add</button>
+    </form>
+</body>
+<script>document.write(htmlfooter);</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/header_footer.js"></script>
+    <script src="../js/addOwner.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/addOwner.css"></link>
+    <title>PET WORLD</title>
+</head>
+<script>document.write(htmlheader);</script>
+<body>
+    <h2>please enter all the information required:</h2> 
+    <form id="inputForm">
+        <table>
+            <tr>
+                <td><label>name:</label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label>surname:</label></td>
+                <td><input type="text" id="surname" required></td>
+            </tr>
+            <tr>
+                <td><label>address:</label></td>
+                <td><input type="text" id="address" required></td>
+            </tr>
+            <tr>
+                <td><label>phone number:</label></td>
+                <td><input type="text" id="phone" required></td>
+            </tr>
+        </table>
+        <button type="submit" onClick="processInput()">add</button>
+    </form>
+</body>
+<script>document.write(htmlfooter);</script>
+</html>
